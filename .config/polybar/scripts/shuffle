@@ -1,0 +1,8 @@
+stat=$(cmus-remote -Q | grep 'shuffle')
+if [[ $stat == "set shuffle true" ]]
+then
+	echo 列
+else 
+	echo 劣
+fi
+

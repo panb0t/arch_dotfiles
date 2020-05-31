@@ -1,0 +1,14 @@
+stat=$(cmus-remote -Q | grep 'repeat_current')
+stat2=$(cmus-remote -Q | grep 'repeat ')
+if [[ $stat == "set repeat_current true" ]]
+then
+	echo 綾
+else 
+if [[ $stat2 == "set repeat true" ]]
+then
+	echo 凌
+else
+	echo 稜
+	fi
+fi
+
